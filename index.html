@@ -1,5 +1,222 @@
-<html>
-  <body>
-    <hl>Welcome to Vaidehi's Portfolio</hl>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaidehi Matkar | Portfolio</title>
+    <style>
+        /* ==== RESET ==== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff5f7;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* ==== HEADER / HERO ==== */
+        header {
+            background: linear-gradient(135deg, #f8a5c2, #f78fb3);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin-top: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .hero-buttons {
+            margin-top: 1.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background: white;
+            color: #f78fb3;
+            padding: 0.7rem 1.2rem;
+            border-radius: 25px;
+            font-weight: bold;
+            margin: 0.5rem;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .btn:hover {
+            background: #f78fb3;
+            color: white;
+        }
+
+        /* ==== SECTION STYLES ==== */
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 2rem 1rem;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+            color: #d14f72;
+        }
+
+        /* ==== ABOUT ==== */
+        .about {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .about img {
+            width: 200px;
+            border-radius: 50%;
+            border: 5px solid #f8a5c2;
+        }
+
+        .about-text {
+            max-width: 500px;
+        }
+
+        /* ==== PROJECTS ==== */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .project-card h3 {
+            color: #d14f72;
+            padding: 1rem 1rem 0 1rem;
+        }
+
+        .project-card p {
+            padding: 0 1rem 1rem 1rem;
+            font-size: 0.95rem;
+        }
+
+        /* ==== CONTACT ==== */
+        .contact {
+            text-align: center;
+        }
+
+        .contact a {
+            color: #d14f72;
+            font-weight: bold;
+        }
+
+        /* ==== FOOTER ==== */
+        footer {
+            background: #f8a5c2;
+            text-align: center;
+            padding: 1rem;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .about {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Vaidehi Matkar</h1>
+        <p>High School Coder | Researcher | Sustainability Advocate</p>
+        <div class="hero-buttons">
+            <a href="#projects" class="btn">View My Work</a>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about">
+            <img src="your-photo.jpg" alt="Vaidehi Matkar">
+            <div class="about-text">
+                <p>
+                    I’m a high school student passionate about combining technology, research, and sustainability 
+                    to make a real-world impact. From building an AI-powered skincare app to developing a 
+                    food waste–reducing meal planner, I love tackling challenges with creativity and code.
+                </p>
+                <p><strong>Skills:</strong> Java ☕, Swift 🍏, Python 🐍</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <img src="fresh-forward.jpg" alt="Fresh Forward App">
+                <h3>Fresh Forward</h3>
+                <p>iOS app reducing food waste with recipe generation, compost tracking, and food scrap reuse tips. Built in Swift.</p>
+            </div>
+            <div class="project-card">
+                <img src="sun-sentry.jpg" alt="Sun Sentry">
+                <h3>Sun Sentry</h3>
+                <p>React Native Expo app reminding users to reapply sunscreen with personalized tips. 3rd Place at HackVH.</p>
+            </div>
+            <div class="project-card">
+                <img src="automation.jpg" alt="Python Automation">
+                <h3>Python Automation Tools</h3>
+                <p>Developed spreadsheet-to-PowerPoint automation for Quantum Edge IT consulting firm.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact">
+            <p>Email: <a href="mailto:matkarvaidehi@gmail.com">matkarvaidehi@gmail.com</a></p>
+            <p>GitHub: <a href="https://github.com/your-github">github.com/your-github</a></p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Vaidehi Matkar | Built with 💖 in Pink</p>
+    </footer>
+
+</body>
 </html>
